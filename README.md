@@ -8,4 +8,4 @@ to verify the commits.
 
 git add -A
 git commit -m "some message"
-git add
+git push
