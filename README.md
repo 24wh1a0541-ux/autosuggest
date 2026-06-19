@@ -6,6 +6,6 @@ to verify the commits.
 2. commit with message.
 3. push/sync 
 
-git add -A
-git commit -m "some message"
-git push
+ git add -A
+ git commit -m "some message"
+ git push
