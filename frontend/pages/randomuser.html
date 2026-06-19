@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Suggest</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/pages/card.html">Card</a>
+        <a href="/pages/toggle.html">Toggle</a>
+        <a href="/pages/randomuser.html">Random User</a>
+    </div>
+
+    <div class="card">
+        <img id="photo" src="" alt="User">
+        <h2 id="name"></h2>
+        <p id="gender"></p>
+
+        <button onclick="getUser()">Get Random User</button>
+    </div>
+
+    <script>
+        async function getUser() {
+            let response = await fetch("https://randomuser.me/api/");
+            let data = await response.json();
+
+            let user = data.results[0];
+
+            document.getElementById("photo").src = user.picture.large;
+            document.getElementById("name").innerText =
+                user.name.first + " " + user.name.last;
+            document.getElementById("gender").innerText = user.gender;
+        }
+
+        getUser();
+    </script>
+
+</body>
+</html>
