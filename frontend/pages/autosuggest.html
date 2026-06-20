@@ -1,20 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/autosuggest.css">
+     
 </head>
 <body>
     <span class="gear">&#x2699;</span>
-    <span class="pill">&#8226; online | &#x23F1;</span>
-    <h1>BeingInfinity</h1>
-    <p>One million phrases. Four algorithms. Prefix Based Auto Suggest.</p>
+    <span class="pill">
+       &#8226;  <span class="g-color"> online</span> | &#x23F1; -ms</span>
+    </span>
+
+    <div class="main-content">
+    <h1>
+        <span class="word-color">Being</span>Infinity</h1>
+    <p class="tagline">One million phrases. Four algorithms. Prefix Based Auto Suggest.</p>
     <div>
-        <span> &#x1F50D;</span>
-        <input type="search" id="site-search" name="q" placeholder="Start typing to search " required>
+        <span class="lens"> &#x1F50D;</span>
+        <input class="search-box" type="text"  placeholder=" Start typing to search " required>
+        <div id="search-suggestions">
+
+        </div>
     </div>
+    </div>
+
+
 
 </body>
 </html>
