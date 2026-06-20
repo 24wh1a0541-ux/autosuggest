@@ -11,37 +11,20 @@
         <a href="/">Home</a>
         <a href="/pages/card.html">Card</a>
         <a href="/pages/toggle.html">Toggle</a>
-        <a href="/pages/randomuser.html">Random User</a>
+        <a href="">Random user</a>
     </div>
+    
+    <div class ="card">
+        <img id="user-img" src="../images/john.png" alt="User image">
+        <h2 id="user-name">John Doe</h2>
+        <p id="user-gender">Male</p>
 
-    <div class="card">
-        <img id="profilePic" src="../images/jane_doe.png" alt="User image">
-        <h2 id="name">Jane Doe</h2>
-        <p id="gender">Female</p>
-
-        <button onclick="toggleUser()">Toggle</button>
+        <button onclick="toggle()">Toggle</button>
     </div>
+    
+    
+    <script src="js/index.js"></script>
+    <script src="../js/toggle.js"></script>
 
-    <script>
-        let isMale = false;
-
-        function toggleUser() {
-            const img = document.getElementById("profilePic");
-            const name = document.getElementById("name");
-            const gender = document.getElementById("gender");
-
-            if (!isMale) {
-                img.src = "../images/john.png";
-                name.textContent = "John Doe";
-                gender.textContent = "Male";
-            } else {
-                img.src = "../images/jane_doe.png";
-                name.textContent = "Jane Doe";
-                gender.textContent = "Female";
-            }
-
-            isMale = !isMale;
-        }
-    </script>
 </body>
 </html>

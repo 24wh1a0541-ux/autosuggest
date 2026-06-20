@@ -47,9 +47,14 @@ body{
     width: 300px;
     text-align: center;
     margin: 30px;
+
 }
 
 .card img{
     width: 100%;
 
+}
+
+.card button{
+    margin-bottom: 20px;
 }
