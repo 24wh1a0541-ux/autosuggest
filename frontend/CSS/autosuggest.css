@@ -36,3 +36,34 @@
      padding-top: 10px;
      padding-bottom: 10px;
 }
+
+#search-suggestions {
+    width: 350px;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+#search-suggestions div {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#search-suggestions div:hover {
+    background-color: #f5f5f5;
+}
+
+.suggestion-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.suggestion-data {
+    float: right;
+    font-size: 13px;
+    color: #777;
+}
